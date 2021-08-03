@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 fn char_count() {
-    let text = "xxxyyy";
+    let text = "www";
     let mut map = HashMap::new();
 
     for charr in text.chars() {
@@ -16,10 +16,11 @@ fn char_count() {
    for value in map.values() {
         if value < &val || value > &val {
             println!("False");
-            break;
+            return 
         }
-        println!("True");
-   }
+    }
+    println!("True");
+
 }
 
 fn main() {
