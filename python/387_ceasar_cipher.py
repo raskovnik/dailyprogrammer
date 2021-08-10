@@ -1,5 +1,5 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-c_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXWZ"
+c_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def ceasar_cipher(c, x):
     #Optional Bonus 1
     #handle non-letter characters
