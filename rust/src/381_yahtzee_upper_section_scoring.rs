@@ -11,9 +11,9 @@ fn main() {
     //     println!("{:?}", line.unwrap().parse::<i32>().unwrap());
     // }
     for line in reader.lines() {
-        let num = line.unwrap();
-        let count = scores.entry(&num).or_insert(0);
-        *count += num.parse::<i32>().unwrap();
+        let num = line.unwrap().parse::<i64>().unwrap();
+        let count = scores.entry(num).or_insert(0);
+        *count += num;
     }
     let mut val = 0;
     for value in scores.values() {
